@@ -1,0 +1,23 @@
+<form-wizard>
+  <wizard-step [title]="'Step1'" (onNext)="onStepNext($event,1)">
+    <h1>Step1</h1>
+    <app-cp1></app-cp1> 
+  </wizard-step>
+  <wizard-step [title]="'Step2'" (onNext)="onStepNext($event,2)">
+    <h1>Step2</h1>
+    <app-cp2></app-cp2> 
+  </wizard-step>
+  <wizard-step [title]="'Step3'" (onNext)="onStepNext($event,3)">
+    <h1>Step3</h1>
+    <app-cp3></app-cp3> 
+  </wizard-step>
+  <wizard-step [title]="'Step4'" (onNext)="onStepNext($event,4)">
+    <h1>Step4</h1>
+    <app-cp4></app-cp4> 
+  </wizard-step>  
+  <wizard-step [title]="'Step5'" (onComplete)="onComplete($event,5)">
+    <h1>Step5</h1>
+    <app-cp5></app-cp5> 
+    
+  </wizard-step>
+</form-wizard>
